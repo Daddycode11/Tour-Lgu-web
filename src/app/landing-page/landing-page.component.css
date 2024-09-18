@@ -1,0 +1,356 @@
+.navigation {
+  background-color: #000000;
+  padding: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end; /* Aligns the navigation to the right */
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #37d437; /* Gold color for links */
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 25px; /* Rounded button style */
+  transition: all 0.3s ease;
+  cursor: pointer; /* Changes cursor to pointer */
+}
+
+/* Hover effects */
+.nav-link:hover {
+  color: #343a40; /* Dark background color */
+  background-color: #37d498; /* Gold background on hover */
+}
+
+.nav-link svg {
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover svg {
+  transform: scale(1.2); /* Icon enlarges slightly on hover */
+}
+
+/* Active link styling */
+.active .nav-link {
+  background-color: #37d498;
+  color: #343a40; /* Dark color for active state */
+}
+
+/* Header styling */
+.header-container {
+  background-color: #343a40; /* Dark background color */
+}
+
+.header-logo {
+  height: 120px;
+}
+
+.header-auth {
+  text-align: right;
+}
+
+.header-auth .btn {
+  margin-left: 10px;
+}
+/* Header Container */
+.header-container {
+  background-color: #004d00; /* Dark Green */
+}
+
+/* Header Logo Styles */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between logo and heading */
+}
+
+.header-logo img {
+  border-radius: 50%; /* Makes the logo rounded */
+}
+
+/* Heading Styles */
+.header-logo h1 {
+  margin: 0;
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+/* Authentication Buttons */
+.header-auth {
+  display: flex;
+  align-items: center;
+}
+
+.header-auth .btn {
+  border-radius: 5px; /* Rounded corners for buttons */
+  padding: 10px 20px; /* Adjust padding for buttons */
+  font-weight: 600; /* Make button text bold */
+}
+
+/* Specific Button Styles */
+.header-auth .btn-light {
+  background-color: #f8f9fa; /* Light background for the Log In button */
+  color: #333; /* Dark text for contrast */
+  border: 1px solid #ccc; /* Light border */
+}
+
+.header-auth .btn-light:hover {
+  background-color: #e2e6ea; /* Darker background on hover */
+}
+
+.header-auth .btn-primary {
+  background-color: #007bff; /* Primary color for Register button */
+  border-color: #007bff; /* Border color */
+}
+
+.header-auth .btn-primary:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-logo h1 {
+    font-size: 1.25rem; /* Adjust font size for smaller screens */
+  }
+
+  .header-auth {
+    gap: 10px; /* Adjust gap for buttons on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .header-logo h1 {
+    font-size: 1rem; /* Further adjust font size for very small screens */
+  }
+
+  .header-auth {
+    flex-direction: column;
+    gap: 5px; /* Adjust gap for vertical button layout */
+  }
+}
+
+/* Header Container */
+.header-container {
+  background-color: #004d00; /* Dark Green */
+  position: relative; /* To position child elements absolutely if needed */
+}
+
+/* Header Logo Styles */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between logo and heading */
+  flex: 1; /* Allow this section to take up remaining space */
+}
+
+.header-logo img {
+  border-radius: 50%; /* Makes the logo rounded */
+}
+
+.header-logo h1 {
+  margin: 0;
+  font-size: 1.5rem; /* Adjust font size as needed */
+  flex: 1; /* Allow this section to take up remaining space */
+  text-align: center; /* Center the text */
+}
+
+/* Authentication Buttons */
+.header-auth {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Specific Button Styles */
+.header-auth .btn {
+  border-radius: 5px; /* Rounded corners for buttons */
+  padding: 10px 20px; /* Adjust padding for buttons */
+  font-weight: 600; /* Make button text bold */
+}
+
+.header-auth .btn-light {
+  background-color: #f8f9fa; /* Light background for the Log In button */
+  color: #333; /* Dark text for contrast */
+  border: 1px solid #ccc; /* Light border */
+}
+
+.header-auth .btn-light:hover {
+  background-color: #e2e6ea; /* Darker background on hover */
+}
+
+.header-auth .btn-primary {
+  background-color: #007bff; /* Primary color for Register button */
+  border-color: #007bff; /* Border color */
+}
+
+.header-auth .btn-primary:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-logo h1 {
+    font-size: 1.25rem; /* Adjust font size for smaller screens */
+  }
+
+  .header-auth {
+    gap: 8px; /* Adjust gap for buttons on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .header-logo h1 {
+    font-size: 1rem; /* Further adjust font size for very small screens */
+  }
+
+  .header-auth {
+    flex-direction: column;
+    gap: 5px; /* Adjust gap for vertical button layout */
+  }
+}
+
+.bg-dark-green {
+  background-color: #191a19; /* Dark Green Color */
+}
+
+.text-custom-green {
+  color: #004d00; /* Dark Green Text Color */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  --light: #ffffff;
+  --dark: #000;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h3 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 2.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  transition: 0.3s ease-in;
+  border-bottom: 1px solid transparent;
+  margin-bottom: 0.5rem;
+  display: inline-flex;
+}
+a:hover {
+  border-bottom: 1px solid var(--dark);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+}
+.flex {
+  display: flex;
+}
+.footer_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  border: none;
+}
+.footer_inner {
+  background: var(--light);
+  backdrop-filter: blur(50px);
+  border: 0.1px solid rgba(233, 232, 232, 0.208);
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100%, 400px);
+  border-bottom: 1px solid var(--dark);
+}
+
+input {
+  padding: 0.75rem 0;
+  border: none;
+  background: none;
+  font-weight: 500;
+  transition: border 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border-radius: 0;
+  width: 100%;
+  font-size: 1.05rem;
+  font-weight: bolder;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: var(--dark);
+}
+@media (min-width: 675px) {
+  .layout {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
+  }
+  .w-50 {
+    width: 50%;
+  }
+  .w-25 {
+    width: 25%;
+  }
+}
+form {
+  position: relative;
+}
+svg {
+  margin: 0.5rem;
+}
+.c-2 {
+  margin-top: 3.5rem;
+}
+.footer_copyright {
+  color: var(--light);
+}
