@@ -1,0 +1,9 @@
+{
+  "routes": [
+    "/landing-page",
+    "/landing-page/about",
+    "/landing-page/announcement",
+    "/landing-page/contacts",
+    "/landing-page/home"
+  ]
+}
